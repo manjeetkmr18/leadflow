@@ -147,8 +147,7 @@ const companies = [
 const CompanyCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Create extended array for infinite scroll effect
-  const extendedCompanies = [...companies, ...companies];
+
 
   // Auto-play functionality
   useEffect(() => {
@@ -185,7 +184,7 @@ const CompanyCarousel = () => {
     <div className="relative w-full overflow-hidden">
       {/* Company logos carousel */}
       <div className="flex items-center justify-center gap-4 sm:gap-6 lg:gap-8 transition-all duration-1000 ease-in-out">
-        {visibleCompanies.map((company, index) => (
+        {visibleCompanies.map((company) => (
           <div
             key={company.uniqueKey}              className="flex items-center gap-3 opacity-75 dark:opacity-65 hover:opacity-90 dark:hover:opacity-80 transition-all duration-300 group cursor-pointer px-3 py-2 rounded-lg hover:bg-black/5 dark:hover:bg-white/5 flex-shrink-0"
           >

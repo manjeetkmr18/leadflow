@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { Phone, PhoneCall, Inbox, MessageCircle, Clock, PhoneOff } from 'lucide-react'
+import { Inbox, MessageCircle, PhoneOff } from 'lucide-react'
 
 const inboxMessages = [
   {
@@ -144,7 +144,8 @@ function WaveAnimation({ isActive }: { isActive: boolean }) {
 
 export function ClientHandlingSection() {
   const [callDuration, setCallDuration] = useState(122) // Start with 2:02 like in the image
-  const [unreadCount, setUnreadCount] = useState(3)
+  // Unread count is used in the UI, so keep it as a constant
+  const unreadCount = inboxMessages.filter(m => m.unread).length;
 
   useEffect(() => {
     // Auto-start call timer

@@ -42,11 +42,11 @@ export default function ForgotPasswordPage() {
                 
                 <h1 className="text-2xl font-bold text-black dark:text-white mb-4">Check Your Email</h1>
                 <p className="text-black/70 dark:text-white/70 mb-6">
-                  We've sent a password reset link to{' '}
+                  We&apos;ve sent a password reset link to{' '}
                   <span className="font-semibold text-black dark:text-white">{email}</span>
                 </p>
                 <p className="text-sm text-black/60 dark:text-white/60 mb-8">
-                  Didn't receive the email? Check your spam folder or try again.
+                  Didn&apos;t receive the email? Check your spam folder or try again.
                 </p>
                 
                 <div className="space-y-4">
@@ -89,7 +89,7 @@ export default function ForgotPasswordPage() {
           {/* Header */}
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-black dark:text-white mb-2">Forgot Password?</h1>
-            <p className="text-black/60 dark:text-white/60">Enter your email and we'll send you a reset link</p>
+            <p className="text-black/60 dark:text-white/60">Enter your email and we&apos;ll send you a reset link</p>
           </div>
 
           {/* Form Card */}
