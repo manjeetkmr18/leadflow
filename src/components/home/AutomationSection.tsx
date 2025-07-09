@@ -5,15 +5,9 @@ import { motion } from "framer-motion";
 import {
   Mail,
   Send,
-  Users,
   Calendar,
   Target,
   Zap,
-  Play,
-  Pause,
-  Settings,
-  BarChart3,
-  TrendingUp,
   Eye,
   MousePointer,
   Clock,
@@ -24,13 +18,11 @@ import {
   Layout,
   Palette,
   Link,
-  Save,
 } from "lucide-react";
 
 // Email Template Preview Component
 function EmailBuilder() {
   const [selectedTemplate, setSelectedTemplate] = useState(0);
-  const [isEditing, setIsEditing] = useState(false);
 
   const emailTemplates = [
     {
@@ -243,7 +235,7 @@ function AutomationFlow() {
     }, 2000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [automationSteps.length]);
 
   return (
     <div className="space-y-8">

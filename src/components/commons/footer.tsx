@@ -35,7 +35,7 @@ export function Footer() {
               />
             </div>
             <p className="text-black/70 dark:text-white/70 text-sm leading-relaxed max-w-xs">
-              We're bringing the personal touch back to customer interactions at scale
+              We&apos;re bringing the personal touch back to customer interactions at scale
             </p>
             <div className="flex space-x-4">
               <a 

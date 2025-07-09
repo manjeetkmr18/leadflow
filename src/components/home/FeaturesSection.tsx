@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Users, BarChart3, Zap, Shield, Globe, Heart, TrendingUp, MessageSquare, CheckCircle, Target, Clock, Award } from 'lucide-react'
+import { Users, BarChart3, Zap, Shield, Globe, MessageSquare, CheckCircle, Target, Clock, Award } from 'lucide-react'
 
 const features = [
   {
@@ -97,7 +97,6 @@ const features = [
 ]
 
 export function FeaturesSection() {
-  const [hoveredCard, setHoveredCard] = useState<number | null>(null)
   const [visibleCards, setVisibleCards] = useState<number[]>([])
 
   useEffect(() => {
@@ -166,8 +165,8 @@ export function FeaturesSection() {
               style={{
                 transitionDelay: `${index * 100}ms`
               }}
-              onMouseEnter={() => setHoveredCard(feature.id)}
-              onMouseLeave={() => setHoveredCard(null)}
+              onMouseEnter={() => {}}
+              onMouseLeave={() => {}}
             >
               {/* Card Background */}
               <div className={`w-full h-full min-h-[200px] ${feature.size === 'large' ? 'lg:min-h-[400px]' : 'lg:min-h-[200px]'} ${feature.bgColor} border border-gray-200/50 dark:border-gray-700/50 rounded-2xl lg:rounded-3xl p-6 lg:p-8 flex flex-col justify-between relative overflow-hidden`}>

@@ -18,7 +18,7 @@ export default function DashboardPage() {
           <div className="flex justify-between items-center">
             <div>
               <h1 className="text-2xl font-bold text-black dark:text-white">CRMFlow Dashboard</h1>
-              <p className="text-black/60 dark:text-white/60">Welcome back! Here's what's happening with your business.</p>
+              <p className="text-black/60 dark:text-white/60">Welcome back! Here&apos;s what&apos;s happening with your business.</p>
             </div>
             <div className="flex items-center space-x-4">
               <Link href="/" className="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors">

@@ -1,150 +1,11 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import {
   Phone,
-  PhoneCall,
-  Inbox,
-  MessageCircle,
-  Clock,
-  PhoneOff,
-  Users,
-  Calendar,
-  TrendingUp,
-  DollarSign,
-  Target,
-  FileText,
-  Settings,
-  Search,
-  Bell,
-  Plus,
   Filter,
-  MoreHorizontal,
-  Video,
-  Mail,
-  Star,
-  Activity,
-  BarChart3,
-  PieChart,
-  UserPlus,
-  Building,
-  MapPin,
-  Tag,
-  Briefcase,
-  X,
 } from "lucide-react";
-
-const dashboardStats = [
-  {
-    label: "Total Clients",
-    value: "2,847",
-    change: "+12%",
-    icon: Users,
-    color: "text-blue-500",
-  },
-  {
-    label: "Active Deals",
-    value: "134",
-    change: "+8%",
-    icon: Target,
-    color: "text-green-500",
-  },
-  {
-    label: "Revenue",
-    value: "$127K",
-    change: "+24%",
-    icon: DollarSign,
-    color: "text-purple-500",
-  },
-  {
-    label: "Conversion",
-    value: "68%",
-    change: "+5%",
-    icon: TrendingUp,
-    color: "text-orange-500",
-  },
-];
-
-const pipelineData = [
-  { stage: "Qualified", count: 24, value: "$240K" },
-  { stage: "Proposal", count: 18, value: "$180K" },
-  { stage: "Negotiation", count: 12, value: "$120K" },
-  { stage: "Closed Won", count: 8, value: "$80K" },
-];
-
-const recentClients = [
-  {
-    name: "John Smith",
-    company: "Tech Corp",
-    status: "Hot Lead",
-    avatar: "JS",
-    time: "2 min ago",
-  },
-  {
-    name: "Emma Wilson",
-    company: "Design Studio",
-    status: "In Progress",
-    avatar: "EW",
-    time: "15 min ago",
-  },
-  {
-    name: "Michael Brown",
-    company: "StartupXYZ",
-    status: "Closed Won",
-    avatar: "MB",
-    time: "1h ago",
-  },
-  {
-    name: "Sarah Davis",
-    company: "Enterprise Ltd",
-    status: "Negotiation",
-    avatar: "SD",
-    time: "2h ago",
-  },
-  {
-    name: "David Chen",
-    company: "Innovation Labs",
-    status: "Hot Lead",
-    avatar: "DC",
-    time: "3h ago",
-  },
-  {
-    name: "Lisa Parker",
-    company: "Global Systems",
-    status: "In Progress",
-    avatar: "LP",
-    time: "4h ago",
-  },
-];
-
-const todayTasks = [
-  { task: "Call John Smith", type: "Call", time: "2:00 PM", priority: "High" },
-  {
-    task: "Demo for Tech Corp",
-    type: "Meeting",
-    time: "3:30 PM",
-    priority: "Medium",
-  },
-  {
-    task: "Send proposal to Emma",
-    type: "Email",
-    time: "5:00 PM",
-    priority: "High",
-  },
-  {
-    task: "Follow up with leads",
-    type: "Call",
-    time: "Tomorrow",
-    priority: "Low",
-  },
-  {
-    task: "Review quarterly reports",
-    type: "Task",
-    time: "Tomorrow",
-    priority: "Medium",
-  },
-];
 
 // Call Timer Component
 const CallTimer = () => {
@@ -297,7 +158,6 @@ const WaveAnimation = ({ isActive }: { isActive: boolean }) => {
 
 // Inbox Dashboard Component - Matches Reference
 function InboxDashboard() {
-  const [selectedMessage, setSelectedMessage] = useState(0);
 
   const inboxMessages = [
     {
@@ -437,7 +297,7 @@ function InboxDashboard() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                onClick={() => setSelectedMessage(message.id)}
+                onClick={() => {}}
               >
                 {/* Avatar */}
                 <div
@@ -549,8 +409,7 @@ export function ClientHandlingSection() {
               </h5>
               {/* Divider line that extends to center border */}
               <div className="w-full h-px bg-gray-600 mt-6 mr-[-1.5rem]"></div>
-              
-              </motion.div>
+            </motion.div>
 
             {/* Call Interface */}
             <motion.div
@@ -581,7 +440,7 @@ export function ClientHandlingSection() {
                   Discount not applied
                 </div>
                 <div className="text-white/80 text-sm leading-relaxed break-words">
-                  Hi, I bought a yearly plan, but the 20% discount wasn't
+                  Hi, I bought a yearly plan, but the 20% discount wasn&apos;t
                   applied. Could someone please take a look? Thank you!
                   <br />
                   <br />— Jane

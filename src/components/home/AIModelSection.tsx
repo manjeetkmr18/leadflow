@@ -1,12 +1,11 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Bot, Zap, Check, Star, ArrowRight, Cpu, Brain, Settings, ChevronDown } from 'lucide-react'
+import { Check, ArrowRight } from 'lucide-react'
 
 export function AIModelSection() {
   const [selectedModel, setSelectedModel] = useState('gpt-4o')
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
   const models = [
     {
@@ -42,8 +41,6 @@ export function AIModelSection() {
       )
     }
   ]
-
-  const selectedModelData = models.find(m => m.id === selectedModel)
 
   return (
     <section 
