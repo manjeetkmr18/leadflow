@@ -366,7 +366,7 @@ function AutomationFlow() {
 export function AutomationSection() {
   return (
     <section className="relative min-h-screen overflow-hidden" style={{
-      background: "linear-gradient(180deg,#0c0c11 64%,#231b3d 73%,#4e3391 85%,#5b6cde 94%,#96a3ff)"
+      background: "linear-gradient(180deg,#000000 64%,#231b3d 73%,#4e3391 85%,#5b6cde 94%,#96a3ff)"
     }}>
       {/* Grid background pattern */}
       <div className="absolute inset-0 opacity-30">
