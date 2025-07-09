@@ -1,6 +1,10 @@
 import { Header } from "@/components/commons/header";
 import { Hero } from "@/components/home/HomeBanner";
 import { ClientHandlingSection } from "@/components/home/ClientHandlingSection";
+import { AutomationSection } from "@/components/home/AutomationSection";
+import { DashboardSection } from "@/components/home/DashboardSection";
+import { AIExperienceSection } from "@/components/home/AIExperienceSection";
+import { AIModelSection } from "@/components/home/AIModelSection";
 // import { FeaturesSection } from "@/components/home/FeaturesSection";
 import { Footer } from "@/components/commons/footer";
 
@@ -11,6 +15,11 @@ export default function Home() {
       <main className="relative">
         <Hero />
         <ClientHandlingSection />
+        <AutomationSection />
+        <DashboardSection />
+        <AIModelSection />
+        <AIExperienceSection />
+
         {/* <FeaturesSection /> */}
       </main>
       <Footer />

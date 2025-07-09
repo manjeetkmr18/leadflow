@@ -1,4 +1,5 @@
 import { Github, Linkedin, Twitter, Youtube } from 'lucide-react'
+import Image from 'next/image'
 
 export function Footer() {
   return (
@@ -8,10 +9,33 @@ export function Footer() {
           {/* Logo and Description */}
           <div className="space-y-6">
             <div>
-              <h2 className="text-2xl font-bold text-black dark:text-white">CRMFlow</h2>
+              <Image
+                src="/logo-dark.png"
+                alt="Leadflow"
+                width={150}
+                height={45}
+                className="h-10 w-auto dark:hidden"
+                quality={100}
+                unoptimized
+                style={{
+                  imageRendering: 'crisp-edges',
+                }}
+              />
+              <Image
+                src="/logo-white.png"
+                alt="Leadflow"
+                width={150}
+                height={45}
+                className="h-10 w-auto hidden dark:block"
+                quality={100}
+                unoptimized
+                style={{
+                  imageRendering: 'crisp-edges',
+                }}
+              />
             </div>
             <p className="text-black/70 dark:text-white/70 text-sm leading-relaxed max-w-xs">
-              We&apos;re bringing the personal touch back to customer interactions at scale
+              We're bringing the personal touch back to customer interactions at scale
             </p>
             <div className="flex space-x-4">
               <a 
