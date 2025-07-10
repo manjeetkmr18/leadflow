@@ -5,6 +5,7 @@ import { AutomationSection } from "@/components/home/AutomationSection";
 import { DashboardSection } from "@/components/home/DashboardSection";
 import { AIExperienceSection } from "@/components/home/AIExperienceSection";
 import { AIModelSection } from "@/components/home/AIModelSection";
+import { IntegrationSection } from "@/components/home/IntegrationSection";
 // import { FeaturesSection } from "@/components/home/FeaturesSection";
 import { Footer } from "@/components/commons/footer";
 
@@ -18,7 +19,8 @@ export default function Home() {
         <AutomationSection />
         <DashboardSection />
         <AIModelSection />
-        <AIExperienceSection />
+        {/* <AIExperienceSection /> */}
+        <IntegrationSection />
 
         {/* <FeaturesSection /> */}
       </main>
