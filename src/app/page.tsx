@@ -8,6 +8,7 @@ import { AIModelSection } from "@/components/home/AIModelSection";
 import { IntegrationSection } from "@/components/home/IntegrationSection";
 // import { FeaturesSection } from "@/components/home/FeaturesSection";
 import { Footer } from "@/components/commons/footer";
+import TeamStaysSection from "@/components/home/TeamStaysSection";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
         <AIModelSection />
         {/* <AIExperienceSection /> */}
         <IntegrationSection />
-
+        <TeamStaysSection />
         {/* <FeaturesSection /> */}
       </main>
       <Footer />
